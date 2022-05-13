@@ -1,0 +1,92 @@
+* Introduction
+* OS
+ - responsibilites
+ - Popular OS
+ - GNU Linux
+ - GNU Linux benefits
+ - Distribution
+ - Linux OS concepts
+   - Kernel
+   - Toolchain
+   - Shell
+   - Desktop Environment
+   - File System
+   - Library
+   - Root File System
+
+* Popular Commands
+ - cp
+ - mv
+ - rm
+ - mkdir <-p>
+ - rmdir <-p>
+ - ls (-l -a)
+ - cd path
+ - cd ..
+ - cd /
+ - pwd
+ - !!
+ - Data Structure (Drive, addresses, compare with windows paths)
+ - Absolute Path/Relateive
+ - Auto complete
+ - printenv
+ - export
+ - echo 	(echo "hello") 
+ 		 	(echo "hello" > file) 
+ 		 	(echo "hello" >> file)  
+ 		 	(> file)
+ - tar xf 
+ - tar cf
+ - cat
+ - head
+ - tail
+ - wc (lines words char)
+ - pipe
+ - lines from 10 - 15
+ - tail -f
+ - vi
+ - nano
+ - touch
+ - attributes in linux (executable)
+ - extension
+ - chmod +x …
+ - chmod -x …
+ - uname -a
+ - dmesg (/var/log/messages)
+ - which command
+ - lsmod
+ - whoami
+ - logname
+ - adduser
+ - deluser
+ - hostname
+ - ifconfig <device> <ip> <mode>
+ - ping
+ - mount
+ - umount
+ - sudo / su
+ - ps aux (all, moreinfo, not execute from terminal)
+ - kill pid
+ - kill proccess
+ - run command with &
+ - run command with &&
+ - run command with ;
+ - echo $?
+ - date
+ - time cmd (real, user, sys)
+ - cal
+ - sleep
+ - top
+ - poweroff/ reboot/ halt
+ - ctrl+c
+ - ctrl+z
+ - jobs
+ - fg
+ - bg
+ - find 
+ - grep
+ - df
+ - diff
+ - chown
+ - wget
+ - history
