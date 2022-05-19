@@ -15,6 +15,20 @@ Android OS is a type of embedded Linux, customized to be used on smartphones. Ot
     Navigation devices
     Other industrial and consumer electronic equipment 
 
+لینوکس امبدد نوعی از سیستم عامل/هسته لینوکس است که برای نصب و استفاده در دستگاه ها و وسایل امبد طراحی شده است.
+
+این نسخه فشرده لینوکس است که ویژگی ها و خدماتی را مطابق با نیازهای عملیاتی و کاربردی سیستم تعبیه شده ارائه می دهد.
+
+لینوکس امبدد، اگرچه از همان هسته لینوکس استفاده می کند، با سیستم عامل لینوکس استاندارد کاملاً متفاوت است. لینوکس امبدد به طور خاص برای سیستم های امبدد سفارشی شده است. بنابراین اندازه بسیار کوچکتری دارد، به قدرت پردازش کمتری نیاز دارد و دارای حداقل امکانات است. 
+
+سیستم عامل اندروید نوعی لینوکس  امبدد است که برای استفاده در گوشی های هوشمند سفارشی شده است. دستگاه های دیگری که لینوکس  امبدد در آنها استفاده می شود عبارتند از:
+
+    Smart TVs
+    Wireless routers
+    Tablet PCs
+    Navigation devices
+    Other industrial and consumer electronic equipment 
+
 ---
 
 ## Embedded systems
@@ -41,7 +55,48 @@ Embedded systems can have advantages over general purpose computers in that:
     They tend to require less power. Some devices run from batteries.
     They do not need much processing power. They can be built using cheaper, less powerful processors.
 
-### Parts
+---
+## OS
+
+### Features of an OS
+    ·         Process management
+    ·         Memory management
+    ·         I/O system management
+    ·         Storage management
+    ·         Network interface
+    ·         User interface
+    ·         File management
+    ·         Protection and Security
+    
+### Why should we choose Linux OS?
+
+The reasons why most of the people chose Linux OS for the embedded device are,
+·         Linux is a free and open source operating system
+·         Linux can run on various kind of CPUs
+·         Linux has a very well structured kernel
+·         Linux is a highly secure OS
+·         Linux OS never crash unless there is any hardware problems
+·         Easy to write device drivers in Linux kernel
+·         Wide range of software available which are supported by Linux
+
+Every OS has component parts, and the Linux OS also has the following components parts:
+
+### Linux Components
+* Bootloader. Your computer needs to go through a startup sequence called booting. This boot process needs guidance, and your OS is the software in control throughout the boot process. When you start your computer the bootloader for your operating system kickstarts the process.
+
+* OS Kernel. You can call the kernel the part of the operating system which is the “closest” to your computing hardware as it is the part which controls the CPU, access to memory and any peripheral devices. It is the “lowest” level at which your operating system works.
+
+*  Background services. Called “daemons” in Linux, these small applications act as servants in the background, ensuring that key functions such as scheduling, printing and multimedia function correctly. They load after you have booted up, or when you have logged into your computer.
+
+*  OS Shell. You need to be able to tell our operating system what to do, and this is the goal of the shell. Also known as the command line, it is a facility which lets you instruct your OS using text. However few people nowadays are familiar with command line code, and it once used to put people off using Linux. This changed because a modern distribution of Linux will use a desktop shell just like Windows.
+
+*  Desktop environment. You can’t interact with the graphical server directly. Instead you need software that can drive the server. This is called a desktop environment in Linux and there are plenty of options including KDE, Unity and Cinnamon. A desktop environment is usually bundled with a number of applications including file and web browsers plus a couple of games.
+
+*  Applications. Obviously, the desktop environment which is bundled with your Linux OS or which you choose to install cannot cater for every application need, there are too many. Individual applications, however, can and there are thousands for Linux just like Windows and Apple’s OS X has thousands of applications. Most Linux distros have app stores which help you find and install apps, for example Ubuntu Software which comes with Ubuntu.
+
+---
+
+### Embedded System Parts
 
 1. Power supply
 
@@ -65,5 +120,59 @@ When the embedded system is used the input is needed to interact with the system
 
 ----------------------------------------------------
 
-### Cross Compile and native
+### Specs:
 
+* CPU
+* GPU
+* RAM
+* Storage (Nand Flash, NOR Flash, SSD, eMMC, External Storage)
+* USB Host 
+* MMC
+* Network
+* Serial Port
+* SPI
+* I2C
+* GPIO
+* LED
+* ADC
+* Key/Button
+* HDMI/VGA/Display port
+* Bluetooth
+* Wifi
+* RTC
+* Audio Input/Output
+
+----------------------------------------------------
+
+### EVB embedded system samples:
+
+* https://www.raspberrypi.com/products/
+* http://nanopi.io/nanopi-neo.html
+* http://www.orangepi.org/
+* http://cubieboard.org/model/at
+* https://www.newark.com/c/embedded-computers-education-maker-boards/arm/embedded-development-kits-arm?silicon-manufacturer=atmel
+
+----------------------------------------------------
+
+### ARM
+
+معماری ARM و پردازنده های مبتنی بر آن، یع قدرت پردازش بالا و مصرف توان پایین مشهور هستند. دو پارامتری که برای ابزارهای همراه امروزی بسیار ضروری می باشد. ابزارهایی که باید همیشه انلاین باشند، در دسترس باشند و در حال پردازش اطلاعات. 
+میکروکنترلر ARM پردازنده‌ایست که در تلفن‌های هوشمند، تبلت‌ها، و حتی برخی لپ‌تاپ‌ها بکاربرده می‌شود. این فن‌آوری کمک شایانی به رشد و توسعه‌ی سریع رایانه‌های قابل حمل داشته و تاثیر بسزایی در ساخت دستگاه‌های الکترونیکی دارد.
+میکروکنترلر ARM از خانواده CPUهای مبتنی بر معماری RISC (Reduced Instruction Set Computer) بوده که براساس معماری Advanced RISC Machines (ARM) (به معنی ماشین‌های RISC پیشرفته توسعه‌یافته) می‌باشد. RISC یک رایانه کم ‌دستور و یک معماری بهینه‌‌ با حداقل دستورالعمل‌ است.
+
+هلدینگ ARM هیچ پردازنده‌ای را تولید نمی‌‌کند. این شرکت این فن‌آوری را ایجاد کرده، دستورالعمل‌های استاندارد را توسعه داده، و سپس به دیگر تولیدکننده‌ها این امکان را می‌دهد تا از این طراحی‌ها استفاده کنند. از این‌رو پردازنده‌های ARM گوناگونی وجود دارند که هرکدام به روش متفاوتی کار می‌کنند.
+
+به دلیل کاهش پیچیدگی واحدهای RISC برروی یک تراشه به ترانزیستورهای کمتری نیاز داریم. بطورکلی ترانزیستور بیش‌تر به معنای توان مصرفی بیش‌تر و ساختار پیچیده‌تر می‌باشد که در نتیجه باعث افزایش قیمت می‌شود.از این‌رو، میکروکنترلرهای ARM معمولاً ارزان قیمت‌تر از پردازنده‌های دسکتاپ سنتی هستند. 
+
+در مقایسه با دیگر میکروکنترلرها، میکروکنترلر ARM به دلیل سرعت بالا، قیمت پایین، توان مصرفی کم، و تولید حرارت کم‌تر برای دستگاه‌های مبتنی بر باتری، سبک، قابل حمل، همانند تلفن‌های هوشمند، لپ‌تاپ‌ها و تبلت‌ها، همچنین سیستم‌های تعبیه‌شده مناسب است. با این وجود، میکروکنترلرهای ARM برای سرورها و دسکتاپ‌ها به ویژه اَبَر کامپیوترها نیز بکاربرده می‌شوند.
+مزایای عمده پردازنده های ARM:
+× دسترسی آسان در بازار
+× تنوع سیستم های برای انواع کاربرد
+× قیمت پایین
+× توانایی پردازش بالا
+
+#### Versions/Family
+خانواده ARM به خانواده های متعددی تقسیم می شوند که به صورت پیوسته نام گذاری شده اند و از خانواده ARM1 تا ARM11 ادامه یافته و توسعه های بعدی با نام Cortext توسعه داده شده اند. هر خانواده جدید با معرفی پردازنده های جدید با بهبود طراحی، افزایش کارایی و ویژگی های جدید همراه می باشد.
+
+https://en.wikipedia.org/wiki/ARM_architecture_family
+https://en.wikipedia.org/wiki/List_of_ARM_processors
