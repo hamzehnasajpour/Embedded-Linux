@@ -16,7 +16,7 @@ sudo dpkg -i xxxxx.deb
 
 3.    
 ```bash
-sudo dpkg -i make cmake build-essentials
+sudo apt-get install make cmake build-essential
 ```
 
 #### Windows
