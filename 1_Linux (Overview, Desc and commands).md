@@ -4,7 +4,7 @@
  - Popular OS
  - GNU Linux
  - GNU Linux benefits
- - Distribution
+ - Distribution: https://en.wikipedia.org/wiki/List_of_Linux_distributions
  - Linux OS concepts
    - Kernel
    - Toolchain
