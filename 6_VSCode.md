@@ -52,3 +52,14 @@ pacman -S mingw-w64-x86_64-make
 
 
 https://code.visualstudio.com/docs/cpp/config-mingw
+
+### Install Extension as offline
+
+1. Download the extension from matket place: https://marketplace.visualstudio.com/VSCode
+2. Open the extensions sidebar
+3. Click on the ellipsis in the right upper corner
+4. Choose Install from VSIX
+
+![vscode_ext](/images/vscode_ext.png)
+
+https://stackoverflow.com/questions/37071388/how-can-i-install-visual-studio-code-extensions-offline
