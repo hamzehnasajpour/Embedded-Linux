@@ -49,9 +49,8 @@ pacman -S mingw-w64-x86_64-make
 
 8. Save, open project, build and run.
 
-
-
 https://code.visualstudio.com/docs/cpp/config-mingw
+
 
 ### Install Extension as offline
 
