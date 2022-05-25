@@ -32,6 +32,9 @@ source ~/.bashrc`
 ```bash
 echo $PATH
 ```
+### Build simple main.cpp
+
+[examples](./3_cpp_examples.md)
 
 ### Using in the VSCode
 
