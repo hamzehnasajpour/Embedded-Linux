@@ -44,3 +44,14 @@ echo $PATH
 4. New toolchain should be appeared.
 5. Select it.
 6. Build the project.
+
+### Build CMake Project in Shell
+
+1. Close the project.
+2. Change directory to the project path.
+3. `mkdir build` (optional)
+4. `cd build`.
+5. `cmake ..`
+6. `make`.
+7. `sudo make install` (if needed)
+8. Done
