@@ -20,7 +20,7 @@ The Remote Status bar item can quickly show you in which context VS Code is runn
 
 #### Remote SSH in VBox
 
-[HERE](./11_ssh_vbox_machine.md)
+[HERE](./011_ssh_vbox_machine.md)
 
 
 https://code.visualstudio.com/docs/remote/ssh
