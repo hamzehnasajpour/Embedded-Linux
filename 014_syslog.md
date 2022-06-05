@@ -12,6 +12,10 @@ https://en.wikipedia.org/wiki/Syslog
 4. `sudo tail -f /var/log/messages`
 
 ### Remote Syslog server
+
+#### Install
+https://help.sumologic.com/03Send-Data/Sources/02Sources-for-Hosted-Collectors/Cloud-Syslog-Source/Install-syslog-ng
+
 #### Configuration
 
 #### Remote apps/webapps
