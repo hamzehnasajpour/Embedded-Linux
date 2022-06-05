@@ -16,6 +16,7 @@ https://en.wikipedia.org/wiki/Syslog
 #### Install
 * https://help.sumologic.com/03Send-Data/Sources/02Sources-for-Hosted-Collectors/Cloud-Syslog-Source/Install-syslog-ng
 * https://linuxtechlab.com/setup-syslog-server-centos-ubuntu-centralized-logs-management/
+* https://www.linuxtechi.com/setup-rsyslog-server-on-debian/
 
 #### Configuration
 
