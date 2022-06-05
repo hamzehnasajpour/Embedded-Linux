@@ -14,7 +14,8 @@ https://en.wikipedia.org/wiki/Syslog
 ### Remote Syslog server
 
 #### Install
-https://help.sumologic.com/03Send-Data/Sources/02Sources-for-Hosted-Collectors/Cloud-Syslog-Source/Install-syslog-ng
+* https://help.sumologic.com/03Send-Data/Sources/02Sources-for-Hosted-Collectors/Cloud-Syslog-Source/Install-syslog-ng
+* https://linuxtechlab.com/setup-syslog-server-centos-ubuntu-centralized-logs-management/
 
 #### Configuration
 
