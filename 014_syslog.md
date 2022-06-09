@@ -25,4 +25,26 @@ https://en.wikipedia.org/wiki/Syslog
  - `$ service syslog restart`
  
 #### Remote apps/webapps
+* Edit `/etc/rsyslog.conf` append this line
+```
+*.* @10.0.0.10:514
+```
+* `$ service syslog restart`
 
+Now the logs will be forwarded to `10.0.0.10` and udp port `514`. 
+
+**In windows** you can have a syslog server with these applications:
+* `tftpd`: https://bitbucket.org/phjounin/tftpd64/downloads/
+* `SysLog Watcher`: https://ezfive.com/syslog-watcher/
+
+**In Linux:** you can active and listen to the port in the `syslog` server config, so you can uncomment these lines:
+```
+module(load="imudp")
+input(type="imudp" port="514")
+```
+After restarting the remote syslog you can check the port via this:
+```bash
+$ sudo lsof -i -P -n | grep 514
+rsyslogd  2496          syslog    5u  IPv4  29885      0t0  UDP *:514 
+rsyslogd  2496          syslog    6u  IPv6  29886      0t0  UDP *:514 
+```
