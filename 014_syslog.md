@@ -19,6 +19,10 @@ https://en.wikipedia.org/wiki/Syslog
 * https://www.linuxtechi.com/setup-rsyslog-server-on-debian/
 
 #### Configuration
-
+* Config file: `/etc/rsyslog.conf`
+* Put logs to another log file: Add this line to config line and then restart the service:
+ - `*.info;mail.none;authpriv.none;cron.none;local1.none     /var/log/messages`
+ - `$ service syslog restart`
+ 
 #### Remote apps/webapps
 
