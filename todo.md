@@ -4,7 +4,6 @@
 * supervisor
 
 
-
 * quick info about package managers (debian -> apt, guix, yum)
 * access to gpio
 * access to i2c
