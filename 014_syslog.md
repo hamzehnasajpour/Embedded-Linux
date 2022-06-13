@@ -48,3 +48,29 @@ $ sudo lsof -i -P -n | grep 514
 rsyslogd  2496          syslog    5u  IPv4  29885      0t0  UDP *:514 
 rsyslogd  2496          syslog    6u  IPv6  29886      0t0  UDP *:514 
 ```
+
+### C Example
+
+```C
+#include <stdio.h>
+#include <syslog.h>
+#include <unistd.h>
+
+
+int main(){
+    printf("Hello World!");
+    setlogmask (LOG_UPTO (LOG_NOTICE));
+    openlog ("exampleprog", LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
+    syslog (LOG_NOTICE, "Program started by User %d", getuid ());
+    syslog (LOG_INFO, "A tree falls in a forest");
+    closelog ();
+    return 0;
+}
+
+```
+
+https://ftp.gnu.org/old-gnu/Manuals/glibc-2.2.3/html_chapter/libc_18.html
+
+#### Links
+* https://stackify.com/syslog-101/
+* https://linux.die.net/man/3/syslog
