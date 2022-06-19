@@ -11,6 +11,6 @@ Note:
 * All in one script. 
 * Don't forget to put your name somewhere in the script. As comment or as a message which will be print or .....
 * It will take just 10 minutes to write. ;)
-
+* Send it till Friday the day before our weekly session.
 
 A so simple script, please write and send it via email to `hamzeh.nasajpour@gmail.com`.
