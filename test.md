@@ -13,4 +13,7 @@ Note:
 * It will take just 10 minutes to write. ;)
 * Send it till Friday the day before our weekly session.
 
-A so simple script, please write and send it via email to `hamzeh.nasajpour@gmail.com`.
+This is a so simple script, please write and send it via email to `hamzeh.nasajpour@gmail.com`.
+
+Thanks,
+Have a great time.
