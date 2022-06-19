@@ -7,5 +7,7 @@ Write a script with these responsibilities:
 5. Print the word counts of the create log in the `EXAM` folder.
 6. Finally print a message at the end. 
 
+Note: All in one script. 
+
 
 A so simple script, please write and send it via email to `hamzeh.nasajpour@gmail.com`.
