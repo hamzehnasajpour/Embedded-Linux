@@ -140,7 +140,7 @@ int main(int argc, char *argv[]) {
     } else {
         printf("printed from parent process - %d\n", getpid());
         int ret;
-
+        
         ret = kill(c_pid, SIGTERM);
         if (ret == -1) {
             perror("kill");

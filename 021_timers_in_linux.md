@@ -22,14 +22,14 @@ Here is an example of a signal handler function:
 void timer_callback(int signum)
 {
     time_t now = time(NULL);
-    printf("Signal %d caught on %li", signum, now);
+    printf("Signal %d caught on %li\n", signum, now);
 }
  
 int main()
 {
     signal(SIGALRM, timer_callback);
     alarm(1);
-    sleep(3);
+    while(1);
     return 0;
 }
 ```
@@ -119,32 +119,25 @@ void timer_callback(int  signum)
 {
     struct timeval now;
     gettimeofday(&now, NULL);
-    printf("Signal %d caught on %li.%03li ", signum, now.tv_sec, now.tv_usec / 1000);
+    printf("Signal %d caught on %li.%03li \n", signum, now.tv_sec, now.tv_usec / 1000);
+
+    // setitimer(ITIMER_REAL, NULL, NULL);
 }
   
 int main()
 {
-    unsigned int remaining = 3;  
- 
     struct itimerval new_timer;
     struct itimerval old_timer;
-  
-    new_timer.it_value.tv_sec = 1;
-    new_timer.it_value.tv_usec = 0;
-    new_timer.it_interval.tv_sec = 0;
-    new_timer.it_interval.tv_usec = 300 * 1000; 
+    signal(SIGALRM, timer_callback); 
+
+    new_timer.it_value.tv_sec = 0;
+    new_timer.it_value.tv_usec = 1;
+    new_timer.it_interval.tv_sec = 1;
+    new_timer.it_interval.tv_usec = 0; 
  
     setitimer(ITIMER_REAL, &new_timer, &old_timer);
-    signal(SIGALRM, timer_callback); 
  
-    while (sleep(remaining) != 0)
-    {
-        if (errno == EINTR)
-            debugf("sleep interrupted by signal");
-        else
-            errorf("sleep error %s", strerror(errno));
-    }
- 
+    while (1); 
     return 0;
 }
 ```
@@ -161,7 +154,15 @@ int main()
 #define debugf(a...){fprintf(stderr, "%sdebug:%s ", COLOR_MAGENTA, COLOR_DEFAULT);fprintf(stderr, a);fprintf(stderr, " %s(%s %s:%d)%s\n", COLOR_RED_BOLD, __FUNCTION__, __FILE__,__LINE__, COLOR_DEFAULT);fflush(stderr);}
 ```
 
+**Important**
+
+```
+    The SIGALRM, SIGVTALRM and SIGPROF signal is sent to a process when the time limit specified in a call to a preceding alarm setting function (such as setitimer) elapses. SIGALRM is sent when real or clock time elapses. SIGVTALRM is sent when CPU time used by the process elapses. SIGPROF is sent when CPU time used by the process and by the system on behalf of the process elapses.
+```
+
 ---
 
 
-link: https://www.makeuseof.com/linux-timer-mechanisms/
+link: 
+* https://www.makeuseof.com/linux-timer-mechanisms/
+* https://dsa.cs.tsinghua.edu.cn/oj/static/unix_signal.html

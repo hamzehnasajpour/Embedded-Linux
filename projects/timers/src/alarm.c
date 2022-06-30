@@ -7,13 +7,13 @@
 void timer_callback(int signum)
 {
     time_t now = time(NULL);
-    printf("Signal %d caught on %li", signum, now);
+    printf("Signal %d caught on %li\n", signum, now);
 }
  
 int main()
 {
     signal(SIGALRM, timer_callback);
     alarm(1);
-    sleep(3);
+    while(1);
     return 0;
 }
